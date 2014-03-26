@@ -1,7 +1,7 @@
 Project-Price-Calculator
 ========================
 
-Got a bunch of projects coming your way? Need a quick and easy way to get those invoices all figured up? Look no further than the Project Price Calculator, a project made especially for Digital Reasoning!
+Got a bunch of freelance projects coming your way? Need a quick and easy way to get those invoices all figured up? Look no further than the Project Price Calculator, an app made for Digital Reasoning!
 
 ## Features:
 
