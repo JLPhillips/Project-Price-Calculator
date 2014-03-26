@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+  <title>Project Price Calculator</title>
+</head>
+<body>
+
+  <div class="container">
+  <!-- START -->
+    <h1>Project Price Calculator</h1>
+
+    <!-- Landing -->
+    <div class="landingPage">
+      <h2 class="button startButton">Start!</h2>
+    </div>
+
+    <!-- New Calculator -->
+    <div class="newCalculatorPage page hidden">
+      <input id="baseRateField" class="field" type="text" autofocus=true placeholder="Enter Base Rate Per Hour Here">
+      <h2 class="button setButton">Set!</h2>
+    </div>
+
+    <!-- Options -->
+    <div class="optionPage page hidden">
+      <h2 id="optionTitle">Your base rate is set at $<span id="baseRate">0</span> per hour.</h2>
+      <h2 class="button addRuleButton">Add a Rule</h2>
+      <h2 class="button startOverButton">Start Over</h2>
+      <h2 class="button goButton">Go!</h2>
+    </div>
+
+    <!-- New Rule -->
+    <div class="addRulePage page hidden">
+      <input id="ruleConditionField" class="field" type="text" autofocus=true placeholder="Enter Condition Here">
+      <input id="ruleValueField" class="field" type="text" placeholder="Enter Amount Here">
+      <input id="addRadio" class="radio" type="radio" name="math" value="addition">Add to Rate
+      <input id="subtractRadio" class="radio" type="radio" name="math" value="subtraction">Subtract from Rate
+      <h2 class="button saveRuleButton">Save Rule</h2>
+      <p>(Rules are not permanent and can be toggled before actual calculation.)</p>
+      <h2 class="button cancelButton">Cancel</h2>
+    </div>
+
+    <!-- New Rule Success -->
+    <div class="addRuleSuccessPage page hidden">
+      <h2 id="optionTitle">Your rule has been added.</h2>
+      <h2 class="button addAnotherRuleButton">Add Another Rule</h2>
+      <h2 class="button startOverButton">Start Over</h2>
+      <h2 class="button goButton">Go!</h2>
+    </div>
+
+    <!-- Calculator -->
+    <div class="calculatorPage page hidden">
+      <h2 id="optionTitle">$<span id="finalBaseRate">0</span>/Hour</h2>
+      <h3>times</h3>
+      <input type="text" class="field" id="hourField" placeholder="Enter Number of Hours Here" autofocus=true>
+      <h2 class="button addRuleToggle">+Toggle Rules</h2>
+      <div id="rulesBox" class="hidden"></div>
+      <h2 class="button calculateButton">Calculate</h2>
+      <h2 id="final">Final Price: $<span id="finalPrice">0</span>.</h2>
+      <h4 class="startOverButtonTiny">Start Over</span>
+    </div>
+
+  <!-- END -->
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
